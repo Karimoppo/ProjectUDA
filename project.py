@@ -375,6 +375,7 @@ while True :
                         print_pause('unfortunatly you have died',2)
                         print_pause('GAME OVER',1)
                         print_pause('Are you ready for another adventure',2)
+                        print_score(Score)
                         End = end_game()
                         print (End)
                         if End == True :
@@ -397,6 +398,7 @@ while True :
                         print_pause('ending number 1',2)
                         print_pause('There are two good ending',2)
                         print_pause('Are you ready for another adventure',2)
+                        print_score(Score)
                         End = end_game()
                         if End == True :
                             break
@@ -408,9 +410,6 @@ while True :
                         Day = ListDS[0]
                         Score = ListDS[1]
                     if End == True :
-                        break
-                    elif m == 1 :
-                        Z = 1
                         break
                 Z = 1
             elif CV == 1:
@@ -425,6 +424,7 @@ while True :
                     print_pause('This ending is the good ending number 1',2)
                     print_pause('There are two good ending',2)
                     print_pause('Are you ready for another adventure',2)
+                    print_score(Score)
                     End = end_game()
                     if End == True :
                         break
@@ -457,6 +457,7 @@ while True :
                                 S = Score
                                 E = Ending
                                 end=run(MYN,MST,lDS1,lDS3,D,lDS4,S,E)
+                                print_score(Score)
                                 if end == True:
                                     break
                                 else:
@@ -465,12 +466,14 @@ while True :
                                 MonsterYN = False
                             elif X == '2':
                                 end = take_photo(MonsterST,Ending)
+                                print_score(Score)
                                 if end == True:
                                     break
                                 else:
                                     print('---')
                             elif X == '3':
                                 end =sneak(MonsterST,MonsterYN,Ending)
+                                print_score(Score)
                                 if end == True:
                                     break
                                 else:
@@ -504,6 +507,7 @@ while True :
                                 S = Score
                                 E = Ending
                                 end=run(MYN,MST,re1,re1,D,re3,S,E)
+                                print_score(Score)
                                 if end == True:
                                     break
                                 else:
@@ -512,12 +516,14 @@ while True :
                                 MonsterYN = False
                             elif X == '2':
                                 end =take_photo(MonsterST,Ending)
+                                print_score(Score)
                                 if end == True:
                                     break
                                 else:
                                     print('---')
                             elif X == '3':
                                 end =sneak(MonsterST,MonsterYN,Ending)
+                                print('score')
                                 if end == True:
                                     break
                                 else:
@@ -554,6 +560,7 @@ while True :
             print_pause('This ending is the good ending number 2',2)
             print_pause('There are two good ending',2)
             print_pause('Are you ready for another adventure',2)
+            print_score(Score)
             End = end_game()
             if End == True :
                 break
@@ -583,6 +590,7 @@ while True :
                     S=Score
                     E=Ending
                     end =run(MYN,MST,re1,re2,D,re3,S,E)
+                    print_score(Score)
                     if end == True:
                         break
                     else:
@@ -591,12 +599,14 @@ while True :
                     MonsterYN = False
                 elif X == '2':
                     end =take_photo(MonsterST,Ending)
+                    print_score(Score)
                     if end == True:
                         break
                     else:
                         print('---')
                 elif X == '3':
                     end =sneak(MonsterST,MonsterYN,Ending)
+                    print_score(Score)
                     if end == True:
                         break
                     else:
